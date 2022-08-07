@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.getSpigotBtn = new System.Windows.Forms.Button();
             this.getForgeBtn = new System.Windows.Forms.Button();
             this.jarList = new System.Windows.Forms.ListBox();
@@ -63,14 +64,14 @@
             this.jarList.ItemHeight = 15;
             this.jarList.Location = new System.Drawing.Point(13, 88);
             this.jarList.Name = "jarList";
-            this.jarList.Size = new System.Drawing.Size(348, 409);
+            this.jarList.Size = new System.Drawing.Size(348, 259);
             this.jarList.TabIndex = 3;
             this.jarList.SelectedIndexChanged += new System.EventHandler(this.jarList_SelectedIndexChanged);
             // 
             // downloadJarBtn
             // 
             this.downloadJarBtn.Enabled = false;
-            this.downloadJarBtn.Location = new System.Drawing.Point(13, 503);
+            this.downloadJarBtn.Location = new System.Drawing.Point(12, 353);
             this.downloadJarBtn.Name = "downloadJarBtn";
             this.downloadJarBtn.Size = new System.Drawing.Size(348, 23);
             this.downloadJarBtn.TabIndex = 4;
@@ -92,7 +93,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(372, 537);
+            this.ClientSize = new System.Drawing.Size(372, 384);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.downloadJarBtn);
             this.Controls.Add(this.jarList);
@@ -100,7 +101,9 @@
             this.Controls.Add(this.getSpigotBtn);
             this.Font = new System.Drawing.Font("맑은 고딕", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "마인크래프트 서버 만들기 프로그램";
